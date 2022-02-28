@@ -6,7 +6,7 @@
 /*   By: vsedat <vsedat@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 10:39:51 by vsedat            #+#    #+#             */
-/*   Updated: 2022/02/25 14:40:23 by vsedat           ###   ########lyon.fr   */
+/*   Updated: 2022/02/28 12:31:01 by vsedat           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	free_split(char **args);
 void	usage(void);
 void	terminate(void);
-void	cmd_not_found(char **cmd);
+void	errorcmd(char **cmd);
 
 #endif

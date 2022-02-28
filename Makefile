@@ -6,7 +6,7 @@
 #    By: vsedat <vsedat@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/17 10:34:48 by vsedat            #+#    #+#              #
-#    Updated: 2022/02/25 14:39:00 by vsedat           ###   ########lyon.fr    #
+#    Updated: 2022/02/28 14:58:37 by vsedat           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ NAME	= pipex
 ### COMPILATION ###
 ##**************###
 CC		= gcc #-Ofast
-CFLAGS	= -Wall -Wextra -Werror -g3 #-fsanitize=address
+CFLAGS	= -Wall -Wextra -Werror -g3 #-fsanitize=address leaks -atExit -- ./
 CMLX	= -framework OpenGL -framework AppKit -g -lmlx -Lmlx
 
 ##*******************##

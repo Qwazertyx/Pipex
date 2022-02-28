@@ -6,7 +6,7 @@
 /*   By: vsedat <vsedat@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 14:23:30 by vsedat            #+#    #+#             */
-/*   Updated: 2022/02/25 16:13:13 by vsedat           ###   ########lyon.fr   */
+/*   Updated: 2022/02/28 12:30:57 by vsedat           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ void	terminate(void)
 	exit(EXIT_FAILURE);
 }
 
-void	cmd_not_found(char **cmd)
+void	errorcmd(char **cmd)
 {
-	write(2, "ERROR: command not found\n", 25);
+	write(2, "Error: command not found\n", 25);
 	free_split(cmd);
 	exit(EXIT_FAILURE);
 }
